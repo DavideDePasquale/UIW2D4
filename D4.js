@@ -5,9 +5,9 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function area(l1,l2){ 
- console.log(l1*l2); 
+ return l1*l2; 
 }
-area(3,7);
+console.log(area(3,7));
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -94,7 +94,7 @@ function epify(stringa){
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function check3and7(num6){ 
-if (num6%3==0 || num6%7==0){ 
+if (num6%3===0 || num6%7===0){ 
     return (true);
 } else { 
     return (false);
@@ -127,10 +127,22 @@ console.log(reverseString("Ciao ragazzi"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function upperFirst(parole){ 
-     return parole.charAt.toUppercase(0);
-}
-console.log(upperFirst("ciao ragazzi"));
+const upperFirst= function(s1) { 
+     const stringWords= s1.split(" ");
+     console.log(stringWords);
+     for(let i=0; i<stringWords.lenght; i++){ 
+        const singleWord = stringWords[i];
+        const firstChar = singleWord.charAt(0).toUpperCase();
+        console.log(firstChar);
+        const remainChair = singleWord.slice(1);
+        console.log(remainChair);
+        const fullWord = firstChar.concat(remainChair);
+        console.log(fullWord);
+     }
+    }
+ const stringFirst= upperFirst("Hello word my name is Davide");
+ console,log(stringFirst);
+
 
 
 /* ESERCIZIO 9
@@ -143,5 +155,9 @@ console.log(upperFirst("ciao ragazzi"));
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
+
+
+
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
